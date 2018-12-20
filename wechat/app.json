@@ -5,7 +5,11 @@
     "pages/tab1/tab1",
     "pages/tab2/tab2",
     "pages/reLaunch/reLaunch",
-    "pages/redirect/redirect"
+    "pages/redirect/redirect",
+    "pages/animation/animation",
+    "pages/setBackgroundColor/setBackgroundColor",
+    "pages/pageScroll/pageScroll",
+    "pages/downloadFile/downFile"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,4 @@
+<!--pages/downloadFile/downFile.wxml-->
+<text>pages/downloadFile/downFile.wxml</text>
+<button bindtap='downLoadFile'>点击下载</button>
+<image src='{{imgUrl}}'></image>

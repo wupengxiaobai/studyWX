@@ -1,0 +1,3 @@
+<!--pages/pageScroll/pageScroll.wxml-->
+<view style='height:2000px;'>xxxx</view>
+<button bindtap='handleClickToTop' type='warn'>滚动到顶部</button>

@@ -1,4 +1,4 @@
-// pages/tab2/tab2.js
+// pages/setBackgroundColor/setBackgroundColor.js
 Page({
 
   /**
@@ -12,7 +12,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    
+    setTimeout(() => {
+      wx.setBackgroundColor({
+        backgroundColor: '#F5F5F4',
+        backgroundColorTop: '#33333',
+        success() {
+          console.log('设置成功')
+        }
+      })
+      wx.setBackgroundTextStyle({
+        textStyle: 'dark' // 下拉背景字体、loading 图的样式为dark
+      })
+    }, 2000)
+
   },
 
   /**
@@ -62,10 +74,5 @@ Page({
    */
   onShareAppMessage: function() {
 
-  },
-  handleClickToIndex() {
-    wx.navigateTo({
-      url: '/pages/index/index',
-    })
   }
 })

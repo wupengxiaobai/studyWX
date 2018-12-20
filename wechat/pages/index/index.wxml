@@ -16,4 +16,7 @@
   <button bindtap='handleClickShowLoading'>显示loading提示框</button>
   <button bindtap='handleClickShowToast'>轻提示</button>
   <button bindtap='handleClickShowModel'>模态框</button>
+
+
+  <button bindtap='handleClickTop'>置顶操作</button>
 </view>

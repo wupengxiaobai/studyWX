@@ -33,6 +33,13 @@ Page({
     //   console.log('更新失败')
     // })
 
+
+  },
+  handleClickTop() {
+    console.log('置顶btn被点击')
+    wx.setTopBarText({
+      text: 'hello world'
+    })
   },
   handleClickNavigatorbackPage() {
     wx.navigateTo({
@@ -96,7 +103,7 @@ Page({
       confirmText: '点我确认',
       confirmColor: '#368',
       success(res) {
-        console.log(res)  //  res参数确定用户是点击取消还是确定...
+        console.log(res) //  res参数确定用户是点击取消还是确定...
         console.log('模态框成功回调')
       },
       fail() {

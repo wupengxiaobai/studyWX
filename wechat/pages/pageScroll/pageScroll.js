@@ -1,4 +1,4 @@
-// pages/tab2/tab2.js
+// pages/pageScroll/pageScroll.js
 Page({
 
   /**
@@ -21,12 +21,18 @@ Page({
   onReady: function() {
 
   },
+  handleClickToTop() {
+    wx.pageScrollTo({
+      scrollTop: 0,
+      duration: 5000
+    })
+  },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    
   },
 
   /**
@@ -62,10 +68,5 @@ Page({
    */
   onShareAppMessage: function() {
 
-  },
-  handleClickToIndex() {
-    wx.navigateTo({
-      url: '/pages/index/index',
-    })
   }
 })
