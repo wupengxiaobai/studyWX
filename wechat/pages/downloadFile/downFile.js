@@ -10,7 +10,7 @@ Page({
   },
   downLoadFile() {
     if (!this.data.imgUrl) {
-      let RequestTask = wx.downloadFile({
+      let DownloadTask = wx.downloadFile({
         url: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545303501290&di=fdd08c353d8c0c4c44afca807aa9a1d7&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F00%2F95%2F76%2F78bOOOPIC49.jpg',
         success: (res) => {
           if (res.statusCode == 200) {
@@ -21,7 +21,10 @@ Page({
           }
         }
       })
-      RequestTask.onProgressUpdate(function(res) {
+      DownloadTask.onProgressUpdate(function(res) {
+        console.log(res)
+      })
+      DownloadTask.onHeadersReceived(function(res){
         console.log(res)
       })
     }
