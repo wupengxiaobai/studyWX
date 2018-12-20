@@ -1,11 +1,25 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/navigatorBack/navigatorBack",
+    "pages/tab1/tab1",
+    "pages/tab2/tab2",
+    "pages/reLaunch/reLaunch",
+    "pages/redirect/redirect"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/tab1/tab1",
+      "text": "tab1"
+    },{
+      "pagePath": "pages/tab2/tab2",
+      "text": "tab2"
+    }]
   }
 }

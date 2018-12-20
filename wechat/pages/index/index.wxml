@@ -1,4 +1,19 @@
 <!--index.wxml-->
 <view class="container">
 
+
+
+
+  <!--  路由 -->
+  <button bindtap='handleClickNavigatorbackPage' type='warn'> navigatorback </button>
+  <button bindtap='handleClickToTab1' type='default'> handleClickToTab1 </button>
+  <button bindtap='handleClickToTab2' type='default'> handleClickToTab2 </button>
+  <button bindtap='handleClickToRelaunchPage' type='default'> handleClickToRelaunchPage </button>
+  <button bindtap='handleClickToRedirectPage' type='default'> handleClickToRedirectPage </button>
+
+
+  <button bindtap='handleClickShowSheet'>显示操作菜单</button>
+  <button bindtap='handleClickShowLoading'>显示loading提示框</button>
+  <button bindtap='handleClickShowToast'>轻提示</button>
+  <button bindtap='handleClickShowModel'>模态框</button>
 </view>

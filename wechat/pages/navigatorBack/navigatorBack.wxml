@@ -1,0 +1,2 @@
+<!--pages/navigatorBack/navigatorBack.wxml-->
+<button bindtap='handleClickToIndex' type='primary'> go to index </button>

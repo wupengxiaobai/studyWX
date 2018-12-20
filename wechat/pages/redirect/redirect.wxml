@@ -1,0 +1,4 @@
+<!--pages/redirect/redirect.wxml-->
+<text>pages/redirect/redirect.wxml</text>
+
+<button bindtap='handleClickToIndex'>关闭当前, 回到index</button>

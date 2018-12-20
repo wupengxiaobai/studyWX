@@ -1,0 +1,2 @@
+<!--pages/tab1/tab1.wxml-->
+<button bindtap='handleClickToIndex' type='warn'>go index</button>
