@@ -11,7 +11,12 @@
     "pages/pageScroll/pageScroll",
     "pages/downloadFile/downFile",
     "pages/storage/storage",
-    "pages/mapLoaction/mapLoaction"
+    "pages/mapLoaction/mapLoaction",
+    "pages/LivePusherContext/LivePusherContext",
+    "pages/Record/Record",
+    "pages/camera/camera",
+    "pages/laction/laction",
+    "pages/showMenu/showMenu"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,6 @@
+
+
+<camera wx:if='{{isSHOW}}'></camera>
+
+<image wx:if='{{imgurl}}' src='{{imgurl}}'></image>
+<button bindtap='handleClick'>拍照</button>
