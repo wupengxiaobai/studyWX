@@ -9,7 +9,9 @@
     "pages/animation/animation",
     "pages/setBackgroundColor/setBackgroundColor",
     "pages/pageScroll/pageScroll",
-    "pages/downloadFile/downFile"
+    "pages/downloadFile/downFile",
+    "pages/storage/storage",
+    "pages/mapLoaction/mapLoaction"
   ],
   "window":{
     "backgroundTextStyle":"light",

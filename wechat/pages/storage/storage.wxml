@@ -1,0 +1,3 @@
+<!--pages/storage/storage.wxml-->
+<button>获取本地存储</button>
+<view class='item' wx:for="{{userStorages}}" wx:key='index'>{{item}}</view>
