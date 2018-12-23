@@ -1,0 +1,2 @@
+<!--pages/file/file.wxml-->
+<button bindtap='getFileInfo'>文件操作</button>

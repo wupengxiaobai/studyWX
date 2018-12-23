@@ -16,7 +16,9 @@
     "pages/Record/Record",
     "pages/camera/camera",
     "pages/laction/laction",
-    "pages/showMenu/showMenu"
+    "pages/showMenu/showMenu",
+    "pages/file/file",
+    "pages/getsettings/getsettings"
   ],
   "window":{
     "backgroundTextStyle":"light",
