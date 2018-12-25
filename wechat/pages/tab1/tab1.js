@@ -26,7 +26,7 @@ Page({
       selectedColor: '#ff4400',
       backgroundColor: '#ffffff',
       borderStyle: 'black',
-      success(){
+      success() {
         console.log('成功设置')
       }
     })
@@ -54,6 +54,23 @@ Page({
     wx.setTabBarBadge({
       index: 1,
       text: '1',
+    })
+  },
+  getNetworkStatusChange() {
+    wx.onNetworkStatusChange(function(res) {
+      console.log(res.isConnected)
+      console.log(res.networkType)
+    })
+    wx.getNetworkType({
+      success(res) {
+        const networkType = res.networkType
+        console.log(res)
+      }
+    })
+    wx.getScreenBrightness({
+      success(res){
+        console.log(res)
+      }
     })
   },
 

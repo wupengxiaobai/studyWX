@@ -15,7 +15,7 @@ Page({
   moveToLocation() {
     this.mapCtx.moveToLocation()
   },
-  translateMarker() {
+  translateMarker() {``
     this.mapCtx.translateMarker({
       markerId: 0,
       autoRotate: true,
