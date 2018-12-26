@@ -1,0 +1,7 @@
+<!--pages/movableView/movableView.wxml-->
+<movable-area>
+  <movable-view damping='10' scale direction="all" inertia out-of-bounds='true' class='viewP'>
+    可移动的视图节点
+  </movable-view>
+
+</movable-area>

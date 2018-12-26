@@ -1,0 +1,2 @@
+<!--pages/text/text.wxml-->
+<text decode='true' selectable='true' space='nbsp'>这    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    是一行文本    </text>

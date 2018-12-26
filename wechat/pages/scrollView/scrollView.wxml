@@ -1,0 +1,13 @@
+<!--pages/scrollView/scrollView.wxml-->
+<scroll-view scroll-y class='wrap' scroll-into-view="{{viewId}}" scroll-with-animation>
+  <view class='item' wx:for="{{views}}" wx:key="id">
+    <view id='{{item.id}}' class='item-title'>{{item.title}}</view>
+    <view class='item-cont' wx:for="{{item.view}}" wx:key='id' wx:for-item="submit">
+      {{submit.cont}}
+    </view>
+  </view>
+</scroll-view>
+
+<view class='nav'>
+  <view bindtap='handleClickChangeNav' data-idx="{{item.id}}" wx:for="{{views}}" wx:key='id'>{{item.id}}</view>
+</view>

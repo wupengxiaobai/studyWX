@@ -1,0 +1,11 @@
+/* pages/movableView/movableView.wxss */
+movable-area{
+  width: 100vw;
+  height: 100vh;
+}
+.viewP{
+  width: 50vw;
+  height: 30vh;
+  background: #368;
+  color: #fff;
+}

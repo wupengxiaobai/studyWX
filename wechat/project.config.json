@@ -42,7 +42,7 @@
 				{
 					"id": 0,
 					"name": "单页面调试",
-					"pathName": "pages/tab1/tab1",
+					"pathName": "pages/text/text",
 					"query": ""
 				}
 			]

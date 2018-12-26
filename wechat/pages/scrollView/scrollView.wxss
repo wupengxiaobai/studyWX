@@ -1,0 +1,22 @@
+/* pages/scrollView/scrollView.wxss */
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.nav{
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 10rpx;
+}
+
+.item-title{
+  padding: 10rpx;
+  background: #ddd;
+}
+
+.item-cont{
+  text-indent:2em;
+  border-bottom:1rpx solid #ddd;
+}

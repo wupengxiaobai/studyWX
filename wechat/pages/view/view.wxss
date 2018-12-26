@@ -1,0 +1,15 @@
+/* pages/view/view.wxss */
+.section{
+  width: 100vw;
+  height: 100vh;
+  background: #368;
+}
+.son{
+  width: 50vw;
+  height: 50vh;
+  background: green;
+}
+
+.bgChange{
+  background: pink;
+}

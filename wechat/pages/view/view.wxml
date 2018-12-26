@@ -1,0 +1,4 @@
+<!--pages/view/view.wxml-->
+<view hover-class='bgChange' class="section">
+  <view class='son' hover-class='bgChange' hover-stop-propagation='true'></view>
+</view>

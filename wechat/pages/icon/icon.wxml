@@ -1,0 +1,11 @@
+<!--pages/icon/icon.wxml-->
+<icon type="success" size="56rpx" />
+<icon type="success" color='#368' size="56rpx" />
+<icon type="success_no_circle" color='#368' size="56rpx" />
+<icon type='info' color='#368' size='100rpx'></icon>
+<icon type='warn' color='#368' size='100rpx'></icon>
+<icon type='waiting' color='#368' size='100rpx'></icon>
+<icon type='cancel' color='#368' size='100rpx'></icon>
+<icon type='download' color='#368' size='100rpx'></icon>
+<icon type='search' color='#368' size='100rpx'></icon>
+<icon type='clear' color='#368' size='100rpx'></icon>

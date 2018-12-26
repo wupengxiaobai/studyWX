@@ -19,7 +19,13 @@
     "pages/showMenu/showMenu",
     "pages/file/file",
     "pages/getsettings/getsettings",
-    "pages/chooseAddress/chooseAddress"
+    "pages/chooseAddress/chooseAddress",
+    "pages/view/view",
+    "pages/scrollView/scrollView",
+    "pages/movableView/movableView",
+    "pages/coverView/coverView",
+    "pages/icon/icon",
+    "pages/text/text"
 
   ],
   "window":{
