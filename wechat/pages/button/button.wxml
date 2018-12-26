@@ -1,0 +1,50 @@
+<!--pages/button/button.wxml-->
+<button type='warn' open-type='openSetting'>打开权限设置面板</button>
+<button type='warn' open-type='contact'>客服会话</button>
+<button type='warn' open-type='share'>转发</button>
+<button type='warn' open-type='getPhoneNumber'>获取手机号码</button>
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<button type='warn' open-type='launchApp'>打开APP </button>
+<button type='warn' open-type='feedback'>打开意见反馈</button>
+<!--  -->
+<label>选择你喜欢的女生类型</label>
+<checkbox-group bindchange="checkboxChange">
+  <checkbox checked value='1'>美丽</checkbox>
+  <checkbox checked value='2'>善良</checkbox>
+  <checkbox value='3'>贤惠</checkbox>
+  <checkbox value='4'>妩媚</checkbox>
+</checkbox-group>
+
+<!-- form -->
+<form bindsubmit="submitForm">
+  <radio-group name="gender">
+    <radio value='0'>女</radio>
+    <radio value='1'>男</radio>
+    <radio value='2'>保密</radio>
+  </radio-group>
+  <checkbox-group name="girl">
+    <checkbox checked value='1'>美丽</checkbox>
+    <checkbox checked value='2'>善良</checkbox>
+    <checkbox value='3'>贤惠</checkbox>
+    <checkbox value='4'>妩媚</checkbox>
+  </checkbox-group>
+  <input type='text' name="text" placeholder='请输入...'></input>
+  <button form-type='submit'>提交</button>
+  <button form-type='reset'>重置</button>
+</form>
+
+<!--  -->
+
+<input bindinput='bindInputChange' focus='{{focus}}' placeholder='请输入...'></input>
+<button bindtap='bindInputFocus'>让input 获得焦点</button>
+
+
+<!-- 
+ -->
+ <picker range='{{messages}}' bindchange='changePicker' range-key='name'>请选择picker</picker>
+
+ <picker mode="multiSelector" range='{{messages2}}' bindchange='changePicker2'>请选择picker2</picker>
+
+  <picker mode="multiSelector" range='{{messages3}}' bindchange='changePicker2'>请选择picker3</picker>
+
+    <picker mode="date" fields="day"  bindchange=''>请选择pickerdate</picker>
