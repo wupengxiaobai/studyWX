@@ -1,0 +1,6 @@
+<!--pages/open/open.wxml-->
+<open-data type="groupName" open-gid="xxxxxx"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userGender" lang="zh_CN"></open-data>
+<open-data type="userNickName"></open-data>
+

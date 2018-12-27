@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/open/open",
     "pages/canvas/canvas",
     "pages/map/map",
     "pages/livePlayer/livePlayer",
