@@ -5,6 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
+    switchVlaue: false,
+    sliderValue: 30,
+    radioMessage: [{
+        id: 1,
+        name: '美丽',
+        checked: false
+      }, {
+        id: 2,
+        name: '善良',
+        checked: false
+      }, {
+        id: 3,
+        name: '可爱',
+        checked: true
+      },
+      {
+        id: 4,
+        name: '么么哒',
+        checked: false
+      }
+    ],
     focus: false,
     messages: [{
         id: 1,
@@ -21,7 +42,7 @@ Page({
         name: '么么哒'
       }
     ],
-    multiSelector: [
+    messages2: [
       [{
         id: 1,
         name: '美丽'
@@ -34,10 +55,10 @@ Page({
       }],
       [{
         id: 1,
-        gender: '女'
+        name: '女'
       }, {
         id: 0,
-        gender: '男'
+        name: '男'
       }, {
         id: 2,
         name: '保密'
@@ -47,6 +68,32 @@ Page({
       ['a', 'b'],
       ['c', 'd']
     ]
+  },
+  switchChange(event) {
+    console.log(event.detail.value)
+    this.setData({
+      switchVlaue: event.detail.value
+    })
+  },
+  sliderChange({
+    detail
+  }) {
+    this.setData({
+      'sliderValue': detail.value
+    })
+  },
+  radioChange({
+    detail
+  }) {
+    let index = detail.value;
+    this.data.radioMessage.forEach((item) => {
+      item.checked = false;
+    })
+    this.data.radioMessage[index - 1].checked = true;
+    this.setData({
+      'radioMessage': this.data.radioMessage
+    })
+    console.log(this.data.radioMessage)
   },
   changePicker({
     detail

@@ -41,10 +41,36 @@
 
 <!-- 
  -->
- <picker range='{{messages}}' bindchange='changePicker' range-key='name'>请选择picker</picker>
+<picker range='{{messages}}' bindchange='changePicker' range-key='name'>请选择picker</picker>
 
- <picker mode="multiSelector" range='{{messages2}}' bindchange='changePicker2'>请选择picker2</picker>
+<picker mode="multiSelector" range='{{messages2}}' range-key='name' bindchange='changePicker2'>请选择picker2</picker>
 
-  <picker mode="multiSelector" range='{{messages3}}' bindchange='changePicker2'>请选择picker3</picker>
+<picker mode="multiSelector" range='{{messages3}}' bindchange='changePicker2'>请选择picker3</picker>
 
-    <picker mode="date" fields="day"  bindchange=''>请选择pickerdate</picker>
+<picker mode="date" fields="day" bindchange=''>请选择pickerdate</picker>
+
+<!-- 
+ -->
+
+<radio-group bindchange="radioChange">
+  <radio wx:for="{{radioMessage}}" checked='{{item.checked}}' wx:key='id' value='{{item.id}}'>{{item.name}}</radio>
+</radio-group>
+
+
+
+
+<!--  -->
+<view>{{sliderValue}}</view>
+<slider value='30' max='100' min='10' step='10' backgroundColor='#ddd' activeColor='#368' block-size='28' block-color='pink' show-value bindchange="sliderChange"></slider>
+
+
+
+<!--  -->
+<switch bindchange='switchChange' color='#368' type='switch'></switch>
+
+
+<!--  -->
+<view>{{textareaVal}}</view>
+<textarea focus='' placeholder='这里是一个文本域 textarea'></textarea>
+
+

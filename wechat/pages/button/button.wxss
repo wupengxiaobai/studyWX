@@ -1,1 +1,5 @@
 /* pages/button/button.wxss */
+.navigatorClass{
+  background: pink;
+  color: #368;
+}

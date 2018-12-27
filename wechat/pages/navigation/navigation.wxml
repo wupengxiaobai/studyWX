@@ -1,0 +1,4 @@
+<!--pages/navigation/navigation.wxml-->
+<navigator url='/pages/navigation/navigation' hover-class="navigatorClass">跳转点击</navigator>
+
+<functional-page-navigator>xxx</functional-page-navigator>
