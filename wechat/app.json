@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/module/module",
+    "pages/route/route",
     "pages/open/open",
     "pages/canvas/canvas",
     "pages/map/map",

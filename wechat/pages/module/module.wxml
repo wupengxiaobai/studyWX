@@ -1,0 +1,3 @@
+<!--pages/module/module.wxml-->
+<button bindtap='showHello' type='wain'>模块化</button>
+<view>{{message}}</view>

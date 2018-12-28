@@ -1,6 +1,8 @@
 //app.js
 App({
-  onLaunch: function () {
+  //   小程序初始化
+  onLaunch: function (Options) {
+    // console.log(Options)
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -33,7 +35,9 @@ App({
       }
     })
   },
+  //  全局数据
   globalData: {
     userInfo: null
   }
-})
+
+}) 

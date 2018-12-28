@@ -14,6 +14,11 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+
+const sayHi = (name, gender) => `hi, ${name} ${gender ? '先森' :'女士'}`
+
+
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  sayHi
 }
