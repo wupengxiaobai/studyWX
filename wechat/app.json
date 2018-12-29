@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/wxml/wxml",
     "pages/module/module",
     "pages/route/route",
     "pages/open/open",
