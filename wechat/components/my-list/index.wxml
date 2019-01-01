@@ -1,0 +1,5 @@
+<!--components/my-list/index.wxml-->
+<view class='com_list'>
+  <view bindtap='onTap' data-idx="{{item}}" class='com_item' wx:for="{{lists}}" wx:key='{{index}}'>{{item.text}}</view>
+  <slot></slot>
+</view>

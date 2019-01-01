@@ -1,0 +1,2 @@
+<!--pages/component/component.wxml-->
+<my-list bindmyevent="handleClickToTap"></my-list>

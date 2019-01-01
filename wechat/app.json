@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/getuserinfo/getuserinfo",
+    "pages/scope/scope",
+    "pages/component/component",
     "pages/wxml/wxml",
     "pages/module/module",
     "pages/route/route",

@@ -1,0 +1,19 @@
+/* components/my-list/index.wxss */
+
+.com_list {
+  width: 90vw;
+  margin-left: 5vw;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.com_item {
+  width: 100%;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #ddd;
+  box-sizing: border-box;
+}
+
+.com_item:nth-last-child(1) {
+  border-bottom: none;
+}

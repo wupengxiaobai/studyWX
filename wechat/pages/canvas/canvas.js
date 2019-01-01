@@ -1,4 +1,50 @@
 Page({
+  data: {
+    x: 0,
+    y: 0,
+    hidden: true
+  },
+  start(e) {
+    this.setData({
+      hidden: false,
+      x: e.touches[0].x,
+      y: e.touches[0].y
+    })
+  },
+  move(e) {
+    this.setData({
+      x: e.touches[0].x,
+      y: e.touches[0].y
+    })
+  },
+  end(e) {
+    this.setData({
+      hidden: true
+    })
+  },
+  onLoad() {
+    //  第二个canvas绘制
+    this.SecondCanvas()
+  },
+  SecondCanvas() {
+    // const ctx = wx.createCanvasContext('myCanvas')
+    // const grd = ctx.createLinearGradient(0, 0, 200, 0)
+    // grd.addColorStop(0, 'red')
+    // grd.addColorStop(1, 'white')
+    // ctx.setFillStyle(grd)
+    // ctx.fillRect(10, 10, 190, 54)
+    // ctx.draw()
+
+    const ctx = wx.createCanvasContext('myCanvas')
+    const grd = ctx.createCircularGradient(75, 50, 50)
+    grd.addColorStop(0, 'red')
+    grd.addColorStop(1, 'white')
+
+    // Fill with gradient
+    ctx.setFillStyle(grd)
+    ctx.fillRect(10, 10, 150, 80)
+    ctx.draw()
+  },
   canvasIdErrorCallback(e) {
     console.error(e.detail.errMsg)
   },

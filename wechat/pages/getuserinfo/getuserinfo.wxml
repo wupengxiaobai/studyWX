@@ -1,0 +1,2 @@
+<!--pages/getuserinfo/getuserinfo.wxml-->
+<button open-type='getUserInfo' bindtap='getUserInfo'>getUserInfo</button>
