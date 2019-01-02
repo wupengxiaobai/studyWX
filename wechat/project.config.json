@@ -42,7 +42,7 @@
 				{
 					"id": 0,
 					"name": "单页面调试",
-					"pathName": "pages/getuserinfo/getuserinfo",
+					"pathName": "pages/scrollView/scrollView",
 					"query": ""
 				}
 			]
