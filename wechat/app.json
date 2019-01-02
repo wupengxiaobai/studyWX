@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/kefuconcat/kefuconcat",
     "pages/getuserinfo/getuserinfo",
     "pages/scope/scope",
     "pages/component/component",
