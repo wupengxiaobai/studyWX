@@ -1,0 +1,17 @@
+<view class="content">
+  <button type="primary" class="button" bindtap="openBluetoothAdapter">1初始化蓝牙适配器</button>
+  <view>蓝牙适配情况:{{initLanya}}</view>
+  <button type='primary' class='button' bindtap='getBluetoothAdapterState'>2获取本机蓝牙适配器状态</button>
+  <view>本机蓝牙是否可用: {{selfLangyaStatus}}</view>
+  <button type='primary' class='button' bindtap='startBluetoothDevicesDiscovery'>3搜索周边蓝牙</button>
+  <view>搜索周边时蓝牙状态: {{unselfLanya}}</view>
+  <button type='primary' class='button' bindtap='getBluetoothDevices'>4搜索周边蓝牙</button>
+  <view>搜索期间检索到的蓝牙设备:
+    <text wx:for="{{bluetoothDevices}}" wx:key="{{item.deviceId}}">{{item.deviceId +'-'+ item.name+'-'+ item.RSSI+'|'}}</text>
+  </view>
+  <button type='primary' class='button' bindtap='createBLEConnection'>5连接低耗能蓝牙设备</button>
+  <view>要连接的蓝牙设备的id: {{uuId}}, 链接结果是 {{uuidSR}}</view>
+  <button type='primary' class='button' bindtap='stopBluetoothDevicesDiscovery'>6手动停止蓝牙搜索周边设备</button>
+  <view>停止蓝牙搜索: {{stopBDD}}</view>
+
+</view>
