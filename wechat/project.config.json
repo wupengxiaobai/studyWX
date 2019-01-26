@@ -42,7 +42,7 @@
 				{
 					"id": 0,
 					"name": "单页面调试",
-					"pathName": "pages/lanya/lanya",
+					"pathName": "pages/lanyademo/lanyademo",
 					"query": ""
 				}
 			]

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/lanyademo/lanyademo",
     "pages/lanya/lanya",
     "pages/kefuconcat/kefuconcat",
     "pages/getuserinfo/getuserinfo",

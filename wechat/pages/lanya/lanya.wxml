@@ -10,8 +10,18 @@
     <text wx:for="{{bluetoothDevices}}" wx:key="{{item.deviceId}}">{{item.deviceId +'-'+ item.name+'-'+ item.RSSI+'|'}}</text>
   </view>
   <button type='primary' class='button' bindtap='createBLEConnection'>5连接低耗能蓝牙设备</button>
-  <view>要连接的蓝牙设备的id: {{uuId}}, 链接结果是 {{uuidSR}}</view>
+  <view>要连接的蓝牙设备的id: {{lanyaDeviceId}}, 链接结果是 {{uuidSR}}</view>
   <button type='primary' class='button' bindtap='stopBluetoothDevicesDiscovery'>6手动停止蓝牙搜索周边设备</button>
   <view>停止蓝牙搜索: {{stopBDD}}</view>
+  <button type='primary' class='button' bindtap='getBLEDeviceServices'>7获取蓝牙所有服务</button>
+  <view>蓝牙服务:
+    <text wx:for="{{lanyaUuid}}" wx:key="id">是否是主服务{{item.isPrimary}} uuid: {{item.uuid}}</text>
+  </view>
+
+  <view style="color:#f60;">PC：ios Android 表现不同, 建议先执行获取蓝牙服务(getBLEDeviceServices)和服务中所有特征值(getBLEDeviceCharacteristics)之后再进行数据交互</view>
+  <button type='primary' class='button' bindtap='getBLEDeviceCharacteristics'>8获取蓝牙服务中的所有特征值</button>
+  <view>蓝牙设备id为{{lanyaDeviceId}} 服务id为 {{lanyaUuid}} 的服务特征值:
+    <!-- <text wx:for="{{}}">{{}}</text> -->
+  </view>
 
 </view>
