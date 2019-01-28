@@ -6,15 +6,15 @@
 module.exports = {
   "button": [{
       "type": "click",
-      "name": "你敢点",
+      "name": "你点",
       "key": "click"
     },
     {
       "name": "菜单",
       "sub_button": [{
           "type": "view",
-          "name": "百度",
-          "url": "http://www.baidu.com/"
+          "name": "大管家",
+          "url": "https://systap.net/dgj/dgjh5/pages/index.html"
         },
         {
           "type": "click",

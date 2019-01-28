@@ -58,7 +58,6 @@ module.exports = () => {
       const xmlData = await getUserDataAsync(req);
       // console.log(xmlData)
 
-      //*********** 我这里有毒, 大坑, 微信服务器不给我post数据, 通过测试工具发送数据后服务器接受的数据
       /* 
         <xml>
           <URL><![CDATA[https://bf45d8ae.ngrok.io]]></URL>

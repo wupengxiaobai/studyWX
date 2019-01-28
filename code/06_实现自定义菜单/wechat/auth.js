@@ -40,6 +40,7 @@ module.exports = () => {
       if (sha1Str !== signature) {
         res.send('error消息不是来自微信服务2')
       }
+      
       //  消息来自微信服务器之后操作
       //  接收请求体重的数据, 流式数据
       const xmlData = await getUserDataAsync(req);
